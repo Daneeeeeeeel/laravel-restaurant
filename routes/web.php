@@ -1,7 +1,7 @@
 <?php
-
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('Home');
-});
+// How do we call the controller from the view?
+
+Route::get('/', [CustomerController::class, 'showAllCustomers']);
