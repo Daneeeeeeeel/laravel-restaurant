@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://zenless-zone-zero.fandom.com/wiki/Hoshimi_Miyabi/Media?file=Message_Hoshimi_Miyabi_Icon.png" target="_blank"><img src="https://upload-os-bbs.hoyolab.com/upload/2024/12/23/230493932/7b417b888d5b2df121ab5e9661e8ab0e_5428339993897921516.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" width="400"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
