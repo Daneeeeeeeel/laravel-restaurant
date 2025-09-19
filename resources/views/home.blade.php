@@ -11,5 +11,22 @@
     <h1>Buongiorno Worldo</h1>
 
     <p>This is a test paragraph to test if everything is working</p>
+     <table>
+    <tr>
+        <th>Customer ID</th>
+        <th>Customer Name</th>
+        <th>Customer Address</th>
+    </tr>
+
+    <!--You can use PHP functions inside of your blade templates-->
+    <!--$customerData has 3 indexes-->
+    @foreach($customerData as $custData)
+        <tr>
+            <td>{{ $custData->cust_id }}</td>
+            <td>{{ $custData->cust_name }}</td>
+            <td>{{ $custData->cust_address }}</td>
+        </tr>
+    @endforeach
+</table> 
 </body>
 </html>
