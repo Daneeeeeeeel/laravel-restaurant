@@ -12,3 +12,11 @@ table, th, td {
     border: 1px solid black;
     padding: 8px;
 }
+
+.cf {
+    text-align: center;
+}
+
+.customer-header {
+    text-align: center;
+}

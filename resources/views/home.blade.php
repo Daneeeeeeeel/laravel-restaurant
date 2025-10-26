@@ -16,17 +16,42 @@
         <th>Customer ID</th>
         <th>Customer Name</th>
         <th>Customer Address</th>
+        <th>Options</th>
     </tr>
 
     <!--You can use PHP functions inside of your blade templates-->
     <!--$customerData has 3 indexes-->
-    @foreach($customerData as $custData)
-        <tr>
-            <td>{{ $custData->cust_id }}</td>
-            <td>{{ $custData->cust_name }}</td>
-            <td>{{ $custData->cust_address }}</td>
-        </tr>
-    @endforeach
-</table> 
+        @foreach($customerData as $custData)
+            <tr>
+                <td>{{ $custData->cust_id }}</td>
+                <td>{{ $custData->cust_name }}</td>
+                <td>{{ $custData->cust_address }}</td>
+                <td>
+                    <form action ="{{ route('customerDelete', $custData->cust_id) }}" method="POST">
+                        @csrf
+                    <!--OVERRIDES-->    
+                        @method('DELETE')
+
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+        @endforeach
+    </table> 
+
+    <h1 class="customer-header">Customer Registration Form</h1>
+
+    <form class="cf" action="{{ route('saveCustomer') }}" method="POST">
+        @csrf
+        <label>Customer Name</label> <br>
+        <input type="text" id="custName" name="custName">
+        
+        <br>
+        <label>Customer Address</label> <br>
+        <input type="text" id="custAdd" name="custAdd">
+
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
