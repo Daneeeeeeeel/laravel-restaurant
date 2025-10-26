@@ -20,3 +20,8 @@ table, th, td {
 .customer-header {
     text-align: center;
 }
+
+.form-options {
+    display: flex;
+    flex-direction: row;
+}

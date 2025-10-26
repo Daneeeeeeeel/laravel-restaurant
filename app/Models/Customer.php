@@ -13,7 +13,7 @@ class Customer extends Model
     protected $table = 'customers_table';
 
     //primary key
-    protected $primarykey = 'cust_id';
+    protected $primaryKey = 'cust_id';
 
     //Fillables are basically the columns that you can change, edit, or add into.
     protected $fillable = [
